@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
-public class UserRepository {
+public class UserRepositoryImpl implements UserRepository{
     private final ConcurrentHashMap<Person, List<Authorities>> users = new ConcurrentHashMap<>();
 
     public void addUser(Person user) {

@@ -1,2 +1,5 @@
-package ru.netology.restspring.authorities;public enum Authorities {
+package ru.netology.restspring.authorities;
+
+public enum Authorities {
+    READ, WRITE, DELETE
 }
