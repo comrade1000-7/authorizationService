@@ -17,6 +17,11 @@ public class AuthorizationController {
         this.service = service;
     }
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello - " + "version 2.0";
+    }
+
     @GetMapping("/authorize")
     public List<Authorities> getAuthorities(@RequestBody @Validated Person user) {
         return service.getAuthorities(user);
